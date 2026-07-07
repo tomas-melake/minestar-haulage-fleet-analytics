@@ -34,7 +34,7 @@ To protect model validity and eliminate parameter bias, the data pipeline implem
 * **Replicates (Duplicates):** Purges duplicate transaction records caused by asynchronous server packet transmission.
 * **Calibration Drift (Inconsistent Entries):** Filters out physically impossible negative or zero-value metrics (`telemetry <= 0`) caused by onboard VIMS calibration drift, yielding a pristine, production-ready dataset.
 
-Following purification, the data is partitioned into an **80% Training Set** and a **20% Validation Set**, which are simultaneously exported as independent assets to power downstream executive Power BI dashboards.
+Following purification, the data is partitioned into an **80% Training Set** and a **20% Test Set**, which are simultaneously exported as independent assets to power downstream executive Power BI dashboards.
 
 ---
 
